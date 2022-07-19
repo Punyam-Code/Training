@@ -10,7 +10,7 @@ public class ArrayHandson {
 public static void main(String[] args) {
 	Student[]st=new Student[3];
 	Scanner sc=new Scanner(System.in);
-	for(int i=0;i<1;i++){
+	for(int i=0;i<3;i++){
 		System.out.println("enter name");
 		String s=sc.next();
 		System.out.println("enter age");
@@ -22,15 +22,11 @@ public static void main(String[] args) {
 	  st[i]=new Student(s,add,a);
 		
 	}
-	for(int i=0;i<st.length;i++){
-		st[i].print();
+	for(Student e:st){
+		e.print();
 	}
-	}
-//	for(Student e:st){
-//		e.print();
-//	}
 }
-
+}
 class Student{
 	private String name;
 	private String add;
